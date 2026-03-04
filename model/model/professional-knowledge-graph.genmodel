@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/org.nasdanika.models.pkg/src/main/java"
+    creationIcons="false"
+    editorDirectory=""
+    modelPluginID="org.nasdanika.models.pkg"
+    modelName="ProfessionalKnowledgeGraph"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore"
+    featureDelegation="Dynamic"
+    complianceLevel="17.0"
+    suppressGenModelAnnotations="false"
+    copyrightFields="false"
+    operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>professional-knowledge-graph.ecore</foreignModel>
+  <genPackages prefix="ProfessionalKnowledgeGraph" basePackage="org.nasdanika.models"
+      disposableProviderFactory="true"
+      ecorePackage="professional-knowledge-graph.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="professional-knowledge-graph.ecore#//SkillMastery">
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//SkillMastery/HEARD_OF"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//SkillMastery/AWARE"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//SkillMastery/FAMILIAR"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//SkillMastery/PROFICIENT"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//SkillMastery/EXPERT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="professional-knowledge-graph.ecore#//CredentialStatus">
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//CredentialStatus/PLANNED"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//CredentialStatus/IN_PROGRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//CredentialStatus/OBTAINED"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//CredentialStatus/ACTIVE"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//CredentialStatus/EXPIRED"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="professional-knowledge-graph.ecore#//EffortStatus">
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//EffortStatus/IDEA"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//EffortStatus/PLANNED"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//EffortStatus/IN_PROGRESS"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//EffortStatus/COMPLETED"/>
+      <genEnumLiterals ecoreEnumLiteral="professional-knowledge-graph.ecore#//EffortStatus/ABANDONED"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="professional-knowledge-graph.ecore#//KnowledgeGraph">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//KnowledgeGraph/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//KnowledgeGraph/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//KnowledgeGraph/people"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//KnowledgeGraph/skills"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//KnowledgeGraph/organizations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//KnowledgeGraph/locations"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="professional-knowledge-graph.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Person/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Person/summary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/contactMethods"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/network"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/personSkills"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/credentials"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/efforts"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Person/locations"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//PersonSkill">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//PersonSkill/skill"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PersonSkill/mastery"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PersonSkill/desired"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PersonSkill/notes"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Skill">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Skill/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Skill/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Skill/skills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Skill/relatedSkills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Skill/prerequisites"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Skill/resources"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//SkillResource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//SkillResource/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//SkillResource/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//SkillResource/url"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="professional-knowledge-graph.ecore#//Credential">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Credential/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Credential/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Credential/date"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Credential/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Credential/status"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Credential/skills"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Education">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Education/institution"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Education/degree"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Education/fieldOfStudy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Education/startDate"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Education/location"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Certification">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Certification/issuer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Certification/credentialId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Certification/expires"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//TrainingCourse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//TrainingCourse/provider"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//TrainingCourse/courseUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//TrainingCourse/certificateUrl"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Endorsement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Endorsement/endorsedBy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Endorsement/text"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Award">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Award/issuer"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Patent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Patent/patentNumber"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Patent/inventors"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="professional-knowledge-graph.ecore#//Effort">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Effort/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Effort/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Effort/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Effort/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Effort/status"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Effort/skills"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Effort/collaborators"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Effort/plannedRoles"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Position">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Position/title"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Position/organization"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Position/location"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Position/activities"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Activity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Activity/outcomes"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Publication">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Publication/publisher"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Publication/publicationUrl"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Publication/isbn"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Publication/doi"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//PlannedRole">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PlannedRole/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PlannedRole/description"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//PlannedRole/skills"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//PlannedRole/count"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Organization">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Organization/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Organization/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Organization/industry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Organization/url"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference professional-knowledge-graph.ecore#//Organization/location"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Location/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Location/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Location/city"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="professional-knowledge-graph.ecore#//ContactMethod">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//ContactMethod/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//ContactMethod/description"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Email">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Email/address"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//Phone">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Phone/countryCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Phone/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//Phone/extension"/>
+    </genClasses>
+    <genClasses ecoreClass="professional-knowledge-graph.ecore#//WebAddress">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//WebAddress/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute professional-knowledge-graph.ecore#//WebAddress/platform"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
