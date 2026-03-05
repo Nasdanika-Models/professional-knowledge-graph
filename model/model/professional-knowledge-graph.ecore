@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="pkg" nsURI="ecore://nasdanika.org/models/professional-knowledge-graph"
-    nsPrefix="org.nasdanika.models.pkg">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="professionalknowledgegraph" nsURI="ecore://nasdanika.org/models/professionalknowledgegraph"
+    nsPrefix="org.nasdanika.models.professionalknowledgegraph">
   <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
     <details key="documentation" value="A model/ontology of a professional knowledge graph that allows users to capture detailed information about their professional experience.&#xA;It can be used to generate tailored resumes and power professional digital twins.&#xA;&#xA;The model captures:&#xA;* People and their professional networks&#xA;* Skills with mastery levels and hierarchy&#xA;* Credentials (education, certifications, training, endorsements, awards, patents)&#xA;* Work/engagement history (organizations, positions, activities/projects)&#xA;* Locations"/>
   </eAnnotations>
-
-  <!-- ==================== ENUMERATIONS ==================== -->
-
   <eClassifiers xsi:type="ecore:EEnum" name="SkillMastery">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Level of mastery a person has in a skill, ranging from minimal awareness to deep expertise."/>
     </eAnnotations>
-    <eLiterals name="HEARD_OF" value="0" literal="HEARD_OF">
+    <eLiterals name="HEARD_OF" literal="HEARD_OF">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The person has heard of the skill but has no hands-on experience."/>
       </eAnnotations>
@@ -38,12 +35,11 @@
       </eAnnotations>
     </eLiterals>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EEnum" name="CredentialStatus">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Status of a credential such as a certification, degree, or course completion."/>
     </eAnnotations>
-    <eLiterals name="PLANNED" value="0" literal="PLANNED">
+    <eLiterals name="PLANNED" literal="PLANNED">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The credential is desired/planned but not yet started."/>
       </eAnnotations>
@@ -69,12 +65,11 @@
       </eAnnotations>
     </eLiterals>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EEnum" name="EffortStatus">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Status of an effort such as a project, position, or activity."/>
     </eAnnotations>
-    <eLiterals name="IDEA" value="0" literal="IDEA">
+    <eLiterals name="IDEA" literal="IDEA">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The effort is an idea or concept that has not been committed to."/>
       </eAnnotations>
@@ -100,9 +95,6 @@
       </eAnnotations>
     </eLiterals>
   </eClassifiers>
-
-  <!-- ==================== CORE CLASSES ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="KnowledgeGraph">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Root container for a professional knowledge graph. Holds the catalogue of people, skills, organizations and locations."/>
@@ -142,9 +134,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== PERSON ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Person">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A person in the professional knowledge graph. Captures the person's network, skills, credentials, and work history."/>
@@ -196,13 +185,11 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="PersonSkill">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Associates a skill with a person, capturing mastery level and whether improvement is desired."/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="skill" lowerBound="1"
-        eType="#//Skill">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="skill" lowerBound="1" eType="#//Skill">
       <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
         <details key="documentation" value="The skill this entry refers to."/>
       </eAnnotations>
@@ -223,9 +210,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== SKILL ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Skill">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A capability or ability to achieve something. Skills can form a hierarchy (sub-skills) and a graph (related/prerequisite skills). Skills may require tools or other resources. Examples: Java, JDBC, Spring Boot, Public Speaking, Project Management."/>
@@ -265,7 +249,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="SkillResource">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A tool or resource required or commonly used when applying a skill."/>
@@ -286,9 +269,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== CREDENTIALS ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Credential" abstract="true">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Abstract base for credentials. A credential is associated with one or more skills and validates proficiency or achievement. Credentials can be in different stages: planned, in-progress, obtained, active, or expired."/>
@@ -325,7 +305,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Education" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="An educational credential such as a degree, diploma, or certificate from an educational institution."/>
@@ -356,7 +335,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Certification" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A professional certification issued by an organization or authority that validates specific skills or knowledge."/>
@@ -377,7 +355,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="TrainingCourse" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A training course completed by the person, such as an online course on Udemy, Coursera, or an in-person training."/>
@@ -398,7 +375,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Endorsement" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="An endorsement of a skill by another person, such as a LinkedIn skill endorsement or a letter of recommendation."/>
@@ -414,7 +390,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Award" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="An award or recognition received by the person."/>
@@ -425,7 +400,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Patent" eSuperTypes="#//Credential">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A patent or invention associated with the person."/>
@@ -442,9 +416,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== EFFORTS (Work History) ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Effort" abstract="true">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Abstract base for something that a person did, is doing, or is planning to do. An effort may use skills and involve collaboration with others. An effort can be planned (an idea) listing required skills and roles for others."/>
@@ -493,7 +464,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Position" eSuperTypes="#//Effort">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A professional position or role held at an organization. Contains the activities and projects carried out in that role."/>
@@ -520,7 +490,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Activity" eSuperTypes="#//Effort">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A specific project, assignment, or activity carried out as part of a position or independently. Activities are concrete deliverable-focused units of work within an engagement."/>
@@ -531,7 +500,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Publication" eSuperTypes="#//Effort">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A publication such as an article, blog post, book, research paper, or other published work."/>
@@ -557,7 +525,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="PlannedRole">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A role needed from collaborators for a planned or future effort."/>
@@ -585,9 +552,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== ORGANIZATION ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Organization">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="An organization such as an employer, client, institution, or community referenced in the knowledge graph."/>
@@ -618,9 +582,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== LOCATION ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="Location">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A geographic location defined by country, state/province and city. Referenced by positions, organizations, and the person's residence history."/>
@@ -641,9 +602,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
-  <!-- ==================== CONTACT METHODS ==================== -->
-
   <eClassifiers xsi:type="ecore:EClass" name="ContactMethod" abstract="true" interface="true">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="Abstract interface for contact methods such as email, phone, and web addresses."/>
@@ -659,7 +617,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Email" eSuperTypes="#//ContactMethod">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="An email address contact method."/>
@@ -670,7 +627,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="Phone" eSuperTypes="#//ContactMethod">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A phone number contact method."/>
@@ -691,7 +647,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
   <eClassifiers xsi:type="ecore:EClass" name="WebAddress" eSuperTypes="#//ContactMethod">
     <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
       <details key="documentation" value="A web address contact method, including social media profiles and personal websites."/>
@@ -707,5 +662,4 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-
 </ecore:EPackage>

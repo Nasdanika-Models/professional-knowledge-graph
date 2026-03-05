@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.nasdanika.models.pkg</groupId>
+	<groupId>org.nasdanika.models.professional-knowledge-graph</groupId>
 	<artifactId>parent</artifactId>
-	<version>2025.12.0</version>
+	<version>2026.2.0</version>
 	<packaging>pom</packaging>
-	<name>Professional Knowledge Graph model</name>
-	<url>https://github.com/Nasdanika-Models/professional-knowledge-graph</url>
+	<name>Professional Knowledge Graph model, processors, doc generator</name>
+	<url>https://professional-knowledge-graph.models.nasdanika.org/</url>
 
 	<licenses>
 		<license>
@@ -22,11 +21,13 @@
 	</scm>
 
 	<properties>
-		<core.version>2025.12.0</core.version>
+		<core.version>2026.2.0</core.version>
+		<html.version>2026.2.0</html.version>
+		<models.ecore.version>2026.2.0</models.ecore.version>
 		<jacoco.version>0.8.14</jacoco.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
-	</properties>
+	</properties>	
 
 	<build>
 		<plugins>
@@ -56,15 +57,16 @@
 					</execution>
 				</executions>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>3.5.4</version>
-			</plugin>
+		        <plugin>
+		            <groupId>org.apache.maven.plugins</groupId>
+		            <artifactId>maven-surefire-plugin</artifactId>
+		            <version>3.5.4</version>
+		        </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.12.0</version>
+			
 				<executions>
 					<execution>
 						<id>aggregate</id>
@@ -73,15 +75,26 @@
 						</goals>
 						<configuration>
 							<failOnError>false</failOnError>
-							<additionalJOptions>
-								<additionalJOption>-Xdoclint:none</additionalJOption>
-								<additionalJOption>--allow-script-in-comments</additionalJOption>
-							</additionalJOptions>
-							<linksource>true</linksource>
-							<useStandardDocletOptions>true</useStandardDocletOptions>
+							<additionalOptions>-Xdoclint:none</additionalOptions>
+							<additionalOptions><![CDATA[--allow-script-in-comments]]></additionalOptions>
+							<linksource>true</linksource>	
+			        			<useStandardDocletOptions>true</useStandardDocletOptions>
 							<links>
 								<link>https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/</link>
+								<link>https://picocli.info/apidocs/</link>
 							</links>
+							<header>
+								<![CDATA[
+								      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+								      <script>
+								        window.dataLayer = window.dataLayer || [];
+								        function gtag(){dataLayer.push(arguments);}
+								        gtag('js', new Date());
+      
+								        gtag('config', 'G-9BRJVLK8CC');
+								      </script>    
+								]]>
+							</header>
 						</configuration>
 					</execution>
 					<execution>
@@ -91,15 +104,26 @@
 						</goals>
 						<configuration>
 							<failOnError>false</failOnError>
-							<additionalJOptions>
-								<additionalJOption>-Xdoclint:none</additionalJOption>
-								<additionalJOption>--allow-script-in-comments</additionalJOption>
-							</additionalJOptions>
-							<linksource>true</linksource>
-							<useStandardDocletOptions>true</useStandardDocletOptions>
+							<additionalOptions>-Xdoclint:none</additionalOptions>
+							<additionalOptions><![CDATA[--allow-script-in-comments]]></additionalOptions>
+							<linksource>true</linksource>	
+			        			<useStandardDocletOptions>true</useStandardDocletOptions>
 							<links>
 								<link>https://download.eclipse.org/modeling/emf/emf/javadoc/2.11/</link>
+								<link>https://picocli.info/apidocs/</link>
 							</links>
+							<header>
+								<![CDATA[
+								      <script async src="https://www.googletagmanager.com/gtag/js?id=G-9BRJVLK8CC"></script>
+								      <script>
+								        window.dataLayer = window.dataLayer || [];
+								        function gtag(){dataLayer.push(arguments);}
+								        gtag('js', new Date());
+      
+								        gtag('config', 'G-9BRJVLK8CC');
+								      </script>    
+								]]>
+							</header>
 						</configuration>
 					</execution>
 				</executions>
@@ -126,21 +150,56 @@
 
 	<dependencies>
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.11.4</version>
-			<scope>test</scope>
-		</dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-api</artifactId>
+		    <version>6.0.1</version>
+		    <scope>test</scope>
+		</dependency>		
 		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.11.4</version>
-			<scope>test</scope>
-		</dependency>
+		    <groupId>org.junit.jupiter</groupId>
+		    <artifactId>junit-jupiter-engine</artifactId>
+		    <version>6.0.1</version>
+		    <scope>test</scope>
+		</dependency>		
 	</dependencies>
 
 	<modules>
 		<module>model</module>
+		<module>ecore</module>
 	</modules>
 
+	 <profiles>
+		<profile>
+			<id>central</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>3.2.8</version>
+						<executions>
+							<execution>
+								<id>sign-artifacts</id>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>	
+					<plugin>					
+						<groupId>org.sonatype.central</groupId>
+						<artifactId>central-publishing-maven-plugin</artifactId>
+						<version>0.9.0</version>
+						<extensions>true</extensions>
+						<configuration>
+							<publishingServerId>central</publishingServerId>
+							<autoPublish>true</autoPublish>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
+

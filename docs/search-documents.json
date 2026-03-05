@@ -1,0 +1,976 @@
+{
+  "references/eClassifiers/SkillResource/references/eStructuralFeatures/description/index.html": {
+    "path": "SkillResource/Attributes/description",
+    "link-uuid": "c4ebfc80-65fa-4633-81e1-ed4207f2eeba",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of the resource.",
+    "timestamp": 1772692284996
+  },
+  "references/eClassifiers/ContactMethod/references/eStructuralFeatures/description/index.html": {
+    "path": "ContactMethod/Attributes/description",
+    "link-uuid": "708822c3-aae5-4504-8444-d261278bfe06",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Additional description of this contact method.",
+    "timestamp": 1772692284193
+  },
+  "references/eClassifiers/Certification/index.html": {
+    "link-uuid": "888869c2-202f-4406-acd0-d46e7e125a20",
+    "title": "Certification",
+    "content": "A professional certification issued by an organization or authority that validates specific skills or knowledge. Diagram ",
+    "timestamp": 1772692284136
+  },
+  "references/eClassifiers/Position/inheritance.html": {
+    "path": "Position/Inheritance",
+    "link-uuid": "7fd564ad-23eb-45e2-b72f-9434dbb657bc",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284846
+  },
+  "references/eClassifiers/SkillMastery/references/eLiterals/HEARD_OF/index.html": {
+    "path": "SkillMastery/HEARD_OF",
+    "link-uuid": "0fb933f6-e5f1-43ad-925d-1c8ca8048d5f",
+    "title": "HEARD_OF",
+    "content": "The person has heard of the skill but has no hands-on experience.",
+    "timestamp": 1772692284960
+  },
+  "references/eClassifiers/CredentialStatus/index.html": {
+    "link-uuid": "ff2ef82f-3dfb-4d77-944c-2396755552c3",
+    "title": "CredentialStatus",
+    "content": "Status of a credential such as a certification, degree, or course completion.",
+    "timestamp": 1772692284267
+  },
+  "references/eClassifiers/Organization/references/eStructuralFeatures/url/index.html": {
+    "path": "Organization/Attributes/url",
+    "link-uuid": "448ba926-33f0-412e-9662-e095b48b12e7",
+    "title": "url",
+    "content": "Type EString Multiplicity 0..1 Website URL of the organization.",
+    "timestamp": 1772692284605
+  },
+  "references/eClassifiers/Publication/references/eStructuralFeatures/publicationUrl/index.html": {
+    "path": "Publication/Attributes/publicationUrl",
+    "link-uuid": "8895443b-f778-4b9c-a6d4-15d52c5ba960",
+    "title": "publicationUrl",
+    "content": "Type EString Multiplicity 0..1 URL where the publication can be accessed.",
+    "timestamp": 1772692284896
+  },
+  "references/eClassifiers/Location/references/eStructuralFeatures/city/index.html": {
+    "path": "Location/Attributes/city",
+    "link-uuid": "9c92b0a0-c407-4bf0-b79d-27efd4fd7783",
+    "title": "city",
+    "content": "Type EString Multiplicity 0..1 City name.",
+    "timestamp": 1772692284558
+  },
+  "references/eClassifiers/Patent/index.html": {
+    "link-uuid": "5caa5770-0876-4ae1-a29d-0f73e356f67f",
+    "title": "Patent",
+    "content": "A patent or invention associated with the person. Diagram ",
+    "timestamp": 1772692284628
+  },
+  "references/eClassifiers/Activity/references/eStructuralFeatures/outcomes/index.html": {
+    "path": "Activity/Attributes/outcomes",
+    "link-uuid": "d75e631c-6a35-4b94-8f53-d57e83a1cda2",
+    "title": "outcomes",
+    "content": "Type EString Multiplicity 0..1 Outcomes, results, or achievements of this activity.",
+    "timestamp": 1772692284070
+  },
+  "references/eClassifiers/Position/references/eStructuralFeatures/location/index.html": {
+    "path": "Position/References/location",
+    "link-uuid": "632acc7b-a6fc-449c-b4a8-6be760e55d48",
+    "title": "location",
+    "content": "Type Location Multiplicity 0..1 Location where this position was based.",
+    "timestamp": 1772692284855
+  },
+  "references/eClassifiers/Endorsement/references/eStructuralFeatures/text/index.html": {
+    "path": "Endorsement/Attributes/text",
+    "link-uuid": "0705129b-c226-4922-84d1-da83f9571650",
+    "title": "text",
+    "content": "Type EString Multiplicity 0..1 Text of the endorsement or recommendation.",
+    "timestamp": 1772692284476
+  },
+  "references/eClassifiers/WebAddress/index.html": {
+    "link-uuid": "13a6ffdc-1889-42d4-85da-b340f4ae7a83",
+    "title": "WebAddress",
+    "content": "A web address contact method, including social media profiles and personal websites. Diagram ",
+    "timestamp": 1772692285055
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/description/index.html": {
+    "path": "Skill/Attributes/description",
+    "link-uuid": "45d0e352-30b3-4981-a3ed-8f01a533e97f",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of the skill.",
+    "timestamp": 1772692284931
+  },
+  "references/eClassifiers/Person/index.html": {
+    "link-uuid": "02d53fcb-ebfa-41b1-8d43-57f1086db515",
+    "title": "Person",
+    "content": "A person in the professional knowledge graph. Captures the person&rsquo;s network, skills, credentials, and work history. Diagram ",
+    "timestamp": 1772692284672
+  },
+  "references/eClassifiers/Publication/references/eStructuralFeatures/doi/index.html": {
+    "path": "Publication/Attributes/doi",
+    "link-uuid": "8724fa39-34bc-4159-90e1-068f7cbd2769",
+    "title": "doi",
+    "content": "Type EString Multiplicity 0..1 Digital Object Identifier for academic papers.",
+    "timestamp": 1772692284891
+  },
+  "references/eClassifiers/SkillMastery/references/eLiterals/PROFICIENT/index.html": {
+    "path": "SkillMastery/PROFICIENT",
+    "link-uuid": "62eb660a-45f1-4026-9917-ceafca12de05",
+    "title": "PROFICIENT",
+    "content": "The person uses the skill regularly and effectively in professional contexts.",
+    "timestamp": 1772692284963
+  },
+  "references/eClassifiers/CredentialStatus/references/eLiterals/OBTAINED/index.html": {
+    "path": "CredentialStatus/OBTAINED",
+    "link-uuid": "c677428c-c06e-40bd-8e70-527917ad5122",
+    "title": "OBTAINED",
+    "content": "The credential has been obtained.",
+    "timestamp": 1772692284282
+  },
+  "references/eClassifiers/Certification/references/eStructuralFeatures/credentialId/index.html": {
+    "path": "Certification/Attributes/credentialId",
+    "link-uuid": "dd3e361f-a9fc-4141-bb95-22e8d5d8d453",
+    "title": "credentialId",
+    "content": "Type EString Multiplicity 0..1 Unique identifier or credential ID assigned by the issuer.",
+    "timestamp": 1772692284149
+  },
+  "references/eClassifiers/EffortStatus/references/eLiterals/PLANNED/index.html": {
+    "path": "EffortStatus/PLANNED",
+    "link-uuid": "eefe18fa-2b80-4ac2-a0c2-0cb48bd8059a",
+    "title": "PLANNED",
+    "content": "The effort is planned and committed to but not yet started.",
+    "timestamp": 1772692284410
+  },
+  "references/eClassifiers/PersonSkill/references/eStructuralFeatures/desired/index.html": {
+    "path": "PersonSkill/Attributes/desired",
+    "link-uuid": "55b5879a-815e-472b-b586-b2b28f7064a8",
+    "title": "desired",
+    "content": "Type EBoolean Multiplicity 0..1 Whether the person desires to improve their mastery in this skill. False means the person has no plans to improve (e.g. they know of JavaScript but have no plans to improve).",
+    "timestamp": 1772692284734
+  },
+  "references/eClassifiers/SkillMastery/references/eLiterals/FAMILIAR/index.html": {
+    "path": "SkillMastery/FAMILIAR",
+    "link-uuid": "85f1cd3a-425d-4c39-bc4e-8dc2ac89c2a6",
+    "title": "FAMILIAR",
+    "content": "The person has some hands-on experience with the skill.",
+    "timestamp": 1772692284958
+  },
+  "references/eClassifiers/PersonSkill/references/eStructuralFeatures/mastery/index.html": {
+    "path": "PersonSkill/Attributes/mastery",
+    "link-uuid": "405e8267-cfa1-4ba7-8a0e-82e2fc805fb4",
+    "title": "mastery",
+    "content": "Type SkillMastery Multiplicity 0..1 Current level of mastery the person has in this skill.",
+    "timestamp": 1772692284738
+  },
+  "references/eClassifiers/PlannedRole/index.html": {
+    "link-uuid": "4d6e56b4-f6d2-4398-9edd-5c48aa3ef901",
+    "title": "PlannedRole",
+    "content": "A role needed from collaborators for a planned or future effort. Diagram ",
+    "timestamp": 1772692284804
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/prerequisites/index.html": {
+    "path": "Skill/References/prerequisites",
+    "link-uuid": "bf890790-673b-4722-956d-ee20a3b231ba",
+    "title": "prerequisites",
+    "content": "Type Skill Multiplicity 0..* Skills that simplify learning this skill. Having a prerequisite skill makes it easier to acquire this skill. For example, knowing C simplifies learning C++; knowing Java simplifies learning Kotlin.",
+    "timestamp": 1772692284937
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/personSkills/index.html": {
+    "path": "Person/References/personSkills",
+    "link-uuid": "b7fa6c6b-f22b-43e8-9442-5110abb30083",
+    "title": "personSkills",
+    "content": "Type PersonSkill Multiplicity 0..* Skills the person has or would like to have, with mastery levels.",
+    "timestamp": 1772692284700
+  },
+  "references/eClassifiers/Position/references/eStructuralFeatures/organization/index.html": {
+    "path": "Position/References/organization",
+    "link-uuid": "0fee23ff-0e69-4114-9a95-b76da3ff51f5",
+    "title": "organization",
+    "content": "Type Organization Multiplicity 0..1 Organization where this position was held.",
+    "timestamp": 1772692284857
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/relatedSkills/index.html": {
+    "path": "Skill/References/relatedSkills",
+    "link-uuid": "660c4ec1-ebe1-4a74-b4cf-f816b42b3591",
+    "title": "relatedSkills",
+    "content": "Type Skill Multiplicity 0..* Skills that are closely related to this skill (graph relationship). For example, C and C++ are related; Python and R are related for data science.",
+    "timestamp": 1772692284939
+  },
+  "references/eClassifiers/SkillResource/index.html": {
+    "link-uuid": "3b7b88b3-e2a8-49e3-8f32-e9f0c270b162",
+    "title": "SkillResource",
+    "content": "A tool or resource required or commonly used when applying a skill. Diagram ",
+    "timestamp": 1772692284990
+  },
+  "references/eClassifiers/CredentialStatus/references/eLiterals/IN_PROGRESS/index.html": {
+    "path": "CredentialStatus/IN_PROGRESS",
+    "link-uuid": "57569717-4bfe-43c1-8e71-29da6e3478b8",
+    "title": "IN_PROGRESS",
+    "content": "The person is currently working toward obtaining this credential.",
+    "timestamp": 1772692284278
+  },
+  "references/eClassifiers/Phone/inheritance.html": {
+    "path": "Phone/Inheritance",
+    "link-uuid": "5139684c-7b4d-42c8-8198-4bdd190fce04",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284770
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/name/index.html": {
+    "path": "Skill/Attributes/name",
+    "link-uuid": "039430c8-2343-4cf1-9a76-631b44708dc1",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name of the skill.",
+    "timestamp": 1772692284934
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/skills/index.html": {
+    "path": "Effort/References/skills",
+    "link-uuid": "2f12adf2-bb9f-4354-b955-d4eca2329ff9",
+    "title": "skills",
+    "content": "Type Skill Multiplicity 0..* Skills used or required in this effort.",
+    "timestamp": 1772692284379
+  },
+  "references/eClassifiers/Location/references/eStructuralFeatures/state/index.html": {
+    "path": "Location/Attributes/state",
+    "link-uuid": "060616a4-de3d-49d6-9f1f-2877223d4440",
+    "title": "state",
+    "content": "Type EString Multiplicity 0..1 State or province name.",
+    "timestamp": 1772692284565
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/description/index.html": {
+    "path": "Credential/Attributes/description",
+    "link-uuid": "e0196266-b6cc-441d-bd87-c225e7cc0e89",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of this credential.",
+    "timestamp": 1772692284245
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/status/index.html": {
+    "path": "Effort/Attributes/status",
+    "link-uuid": "f6505afe-9fe1-402f-975e-687d8de9d0b3",
+    "title": "status",
+    "content": "Type EffortStatus Multiplicity 0..1 Current status of the effort.",
+    "timestamp": 1772692284386
+  },
+  "references/eClassifiers/Organization/index.html": {
+    "link-uuid": "9978f61e-bdb1-4d0f-98eb-f66458b943f7",
+    "title": "Organization",
+    "content": "An organization such as an employer, client, institution, or community referenced in the knowledge graph. Diagram ",
+    "timestamp": 1772692284587
+  },
+  "references/eClassifiers/Organization/references/eStructuralFeatures/name/index.html": {
+    "path": "Organization/Attributes/name",
+    "link-uuid": "00563897-385d-4634-9de2-697087248375",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name of the organization.",
+    "timestamp": 1772692284602
+  },
+  "references/eClassifiers/EffortStatus/references/eLiterals/IDEA/index.html": {
+    "path": "EffortStatus/IDEA",
+    "link-uuid": "d5c15ee1-ed6b-4ab7-ac56-82d030654f01",
+    "title": "IDEA",
+    "content": "The effort is an idea or concept that has not been committed to.",
+    "timestamp": 1772692284403
+  },
+  "references/eClassifiers/Patent/inheritance.html": {
+    "path": "Patent/Inheritance",
+    "link-uuid": "2bfa40f9-d067-423c-841a-2cab5723454f",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284631
+  },
+  "references/eClassifiers/Credential/inheritance.html": {
+    "path": "Credential/Inheritance",
+    "link-uuid": "a0bac8d6-551a-40dd-8070-2d5f8082bbca",
+    "title": "Inheritance",
+    "content": "Subtypes ",
+    "timestamp": 1772692284237
+  },
+  "references/eClassifiers/Education/references/eStructuralFeatures/startDate/index.html": {
+    "path": "Education/Attributes/startDate",
+    "link-uuid": "90f8bfc1-f954-4fc0-913e-bfeb896afbd3",
+    "title": "startDate",
+    "content": "Type EDate Multiplicity 0..1 Date when the person started this educational program.",
+    "timestamp": 1772692284329
+  },
+  "references/eClassifiers/Publication/references/eStructuralFeatures/publisher/index.html": {
+    "path": "Publication/Attributes/publisher",
+    "link-uuid": "94263874-015d-4922-b48e-3be01d3731fa",
+    "title": "publisher",
+    "content": "Type EString Multiplicity 0..1 Publisher, journal, or platform where this was published.",
+    "timestamp": 1772692284898
+  },
+  "references/eClassifiers/EffortStatus/references/eLiterals/IN_PROGRESS/index.html": {
+    "path": "EffortStatus/IN_PROGRESS",
+    "link-uuid": "2144f6b4-ad08-444c-b868-2e2867cdd61b",
+    "title": "IN_PROGRESS",
+    "content": "The effort is currently in progress.",
+    "timestamp": 1772692284406
+  },
+  "references/eClassifiers/Credential/index.html": {
+    "link-uuid": "6c8ee924-30b4-47d7-8d93-55eaa4c46df3",
+    "title": "Credential",
+    "content": "Abstract base for credentials. A credential is associated with one or more skills and validates proficiency or achievement. Credentials can be in different stages: planned, in-progress, obtained, active, or expired. Diagram ",
+    "timestamp": 1772692284233
+  },
+  "references/eClassifiers/ContactMethod/index.html": {
+    "link-uuid": "7a63dba9-10c9-49ba-abe7-fc4773a8dc0d",
+    "title": "ContactMethod",
+    "content": "Abstract interface for contact methods such as email, phone, and web addresses. Diagram ",
+    "timestamp": 1772692284185
+  },
+  "references/eClassifiers/SkillMastery/references/eLiterals/AWARE/index.html": {
+    "path": "SkillMastery/AWARE",
+    "link-uuid": "0878db98-5cfc-4b79-a5e0-8cbce7a07f99",
+    "title": "AWARE",
+    "content": "The person is aware of the skill and understands its general purpose and capabilities.",
+    "timestamp": 1772692284953
+  },
+  "references/eClassifiers/TrainingCourse/references/eStructuralFeatures/certificateUrl/index.html": {
+    "path": "TrainingCourse/Attributes/certificateUrl",
+    "link-uuid": "bfa13a3d-9fbd-403b-ba42-bfb10ea3bfbe",
+    "title": "certificateUrl",
+    "content": "Type EString Multiplicity 0..1 URL of the completion certificate.",
+    "timestamp": 1772692285027
+  },
+  "references/eClassifiers/Email/index.html": {
+    "link-uuid": "43d46a87-36a5-4c5f-80a8-ca2f4253c505",
+    "title": "Email",
+    "content": "An email address contact method. Diagram ",
+    "timestamp": 1772692284428
+  },
+  "references/eClassifiers/EffortStatus/references/eLiterals/ABANDONED/index.html": {
+    "path": "EffortStatus/ABANDONED",
+    "link-uuid": "d7407660-2a1a-4559-888a-30981e3c1743",
+    "title": "ABANDONED",
+    "content": "The effort was abandoned before completion.",
+    "timestamp": 1772692284396
+  },
+  "references/eClassifiers/EffortStatus/index.html": {
+    "link-uuid": "16c5cc3d-03a2-451b-aaf2-390bdb55c3bc",
+    "title": "EffortStatus",
+    "content": "Status of an effort such as a project, position, or activity.",
+    "timestamp": 1772692284393
+  },
+  "references/eClassifiers/Endorsement/inheritance.html": {
+    "path": "Endorsement/Inheritance",
+    "link-uuid": "ad54c4cd-e4a8-4edb-a843-fde281ca76b0",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284464
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/organizations/index.html": {
+    "path": "KnowledgeGraph/References/organizations",
+    "link-uuid": "d5abbb2b-27a1-43f2-a257-11661629ed4a",
+    "title": "organizations",
+    "content": "Type Organization Multiplicity 0..* Organizations (employers, clients, institutions) referenced in this knowledge graph.",
+    "timestamp": 1772692284517
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/name/index.html": {
+    "path": "KnowledgeGraph/Attributes/name",
+    "link-uuid": "b8c424d8-c6ca-4e21-8caa-d135832f4e82",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name of this knowledge graph.",
+    "timestamp": 1772692284514
+  },
+  "references/eClassifiers/PlannedRole/references/eStructuralFeatures/skills/index.html": {
+    "path": "PlannedRole/References/skills",
+    "link-uuid": "0efc974c-5d46-47df-9e1f-ede58de32411",
+    "title": "skills",
+    "content": "Type Skill Multiplicity 0..* Skills required for this role.",
+    "timestamp": 1772692284816
+  },
+  "references/eClassifiers/Position/references/eStructuralFeatures/activities/index.html": {
+    "path": "Position/References/activities",
+    "link-uuid": "7fe2eb8f-9728-4dae-8889-5b4e89c9307a",
+    "title": "activities",
+    "content": "Type Activity Multiplicity 0..* Activities, projects and assignments carried out within this position.",
+    "timestamp": 1772692284852
+  },
+  "references/eClassifiers/SkillMastery/references/eLiterals/EXPERT/index.html": {
+    "path": "SkillMastery/EXPERT",
+    "link-uuid": "e6af7e20-4117-43b0-8bcb-f6e84e707736",
+    "title": "EXPERT",
+    "content": "The person has deep, comprehensive expertise in the skill and can guide others.",
+    "timestamp": 1772692284955
+  },
+  "references/eClassifiers/CredentialStatus/references/eLiterals/EXPIRED/index.html": {
+    "path": "CredentialStatus/EXPIRED",
+    "link-uuid": "314d3879-24b8-45f6-90e8-7d728d4deb18",
+    "title": "EXPIRED",
+    "content": "The credential has expired.",
+    "timestamp": 1772692284275
+  },
+  "references/eClassifiers/Organization/references/eStructuralFeatures/location/index.html": {
+    "path": "Organization/References/location",
+    "link-uuid": "d3872de5-679c-4345-ba70-d7925433f916",
+    "title": "location",
+    "content": "Type Location Multiplicity 0..1 Primary location/headquarters of the organization.",
+    "timestamp": 1772692284599
+  },
+  "references/eClassifiers/Award/index.html": {
+    "link-uuid": "9b3ab269-84d3-41b4-90a1-d0a0239c8b57",
+    "title": "Award",
+    "content": "An award or recognition received by the person. Diagram ",
+    "timestamp": 1772692284097
+  },
+  "references/eClassifiers/Certification/inheritance.html": {
+    "path": "Certification/Inheritance",
+    "link-uuid": "c97a0877-7ebf-4bb7-833e-e72c821b1d7b",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284141
+  },
+  "references/eClassifiers/SkillMastery/index.html": {
+    "link-uuid": "488de208-898c-4dc0-8a03-472a95fba9b6",
+    "title": "SkillMastery",
+    "content": "Level of mastery a person has in a skill, ranging from minimal awareness to deep expertise.",
+    "timestamp": 1772692284950
+  },
+  "references/eClassifiers/CredentialStatus/references/eLiterals/ACTIVE/index.html": {
+    "path": "CredentialStatus/ACTIVE",
+    "link-uuid": "6ca00e36-8ed0-4ce5-90ca-0451e89085cf",
+    "title": "ACTIVE",
+    "content": "The credential is currently active (for credentials with expiry).",
+    "timestamp": 1772692284271
+  },
+  "references/eClassifiers/Education/references/eStructuralFeatures/fieldOfStudy/index.html": {
+    "path": "Education/Attributes/fieldOfStudy",
+    "link-uuid": "6b299901-2994-4f9f-8d9a-94b1464b8b25",
+    "title": "fieldOfStudy",
+    "content": "Type EString Multiplicity 0..1 Field or major area of study (e.g., Computer Science, Electrical Engineering).",
+    "timestamp": 1772692284320
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/plannedRoles/index.html": {
+    "path": "Effort/References/plannedRoles",
+    "link-uuid": "895177c3-3097-48b4-bd80-e90cd22bb59b",
+    "title": "plannedRoles",
+    "content": "Type PlannedRole Multiplicity 0..* Roles needed from others for this effort. Useful for planned/future efforts.",
+    "timestamp": 1772692284376
+  },
+  "references/eClassifiers/Patent/references/eStructuralFeatures/inventors/index.html": {
+    "path": "Patent/References/inventors",
+    "link-uuid": "2c0d39b1-ba97-483c-8732-7b9d5994448c",
+    "title": "inventors",
+    "content": "Type Person Multiplicity 0..* Co-inventors of this patent.",
+    "timestamp": 1772692284638
+  },
+  "references/eClassifiers/Endorsement/references/eStructuralFeatures/endorsedBy/index.html": {
+    "path": "Endorsement/References/endorsedBy",
+    "link-uuid": "090488a1-653e-4c5b-adb1-a6a6a0253a74",
+    "title": "endorsedBy",
+    "content": "Type Person Multiplicity 0..1 The person who provided this endorsement.",
+    "timestamp": 1772692284472
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/credentials/index.html": {
+    "path": "Person/References/credentials",
+    "link-uuid": "d1fe1887-8415-41c4-afa6-ddc499420f80",
+    "title": "credentials",
+    "content": "Type Credential Multiplicity 0..* Credentials: education, certifications, training, endorsements, awards, patents.",
+    "timestamp": 1772692284684
+  },
+  "references/eClassifiers/Skill/index.html": {
+    "link-uuid": "63f294e3-5c93-4609-94f5-b21cb05bba8d",
+    "title": "Skill",
+    "content": "A capability or ability to achieve something. Skills can form a hierarchy (sub-skills) and a graph (related/prerequisite skills). Skills may require tools or other resources. Examples: Java, JDBC, Spring Boot, Public Speaking, Project Management. Diagram ",
+    "timestamp": 1772692284925
+  },
+  "references/eClassifiers/Effort/inheritance.html": {
+    "path": "Effort/Inheritance",
+    "link-uuid": "3444baad-e773-456b-a0a1-6f660010f16e",
+    "title": "Inheritance",
+    "content": "Subtypes ",
+    "timestamp": 1772692284360
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/skills/index.html": {
+    "path": "Skill/References/skills",
+    "link-uuid": "ab0572ba-63b8-4f72-b8cd-1e0deb8bff02",
+    "title": "skills",
+    "content": "Type Skill Multiplicity 0..* Sub-skills forming a hierarchy. For example, the Java skill may contain JDBC, Spring, Jakarta EE as sub-skills.",
+    "timestamp": 1772692284945
+  },
+  "references/eClassifiers/WebAddress/references/eStructuralFeatures/url/index.html": {
+    "path": "WebAddress/Attributes/url",
+    "link-uuid": "e240afdd-81a7-45b5-8146-964df942add6",
+    "title": "url",
+    "content": "Type EString Multiplicity 0..1 The URL.",
+    "timestamp": 1772692285066
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/endDate/index.html": {
+    "path": "Effort/Attributes/endDate",
+    "link-uuid": "c3a72c5d-e246-4dc7-84a6-44b1a5a64e4b",
+    "title": "endDate",
+    "content": "Type EDate Multiplicity 0..1 End date of the effort. Null if still ongoing.",
+    "timestamp": 1772692284370
+  },
+  "references/eClassifiers/PersonSkill/index.html": {
+    "link-uuid": "78528759-8755-40ca-ba61-b34f6dbdeb36",
+    "title": "PersonSkill",
+    "content": "Associates a skill with a person, capturing mastery level and whether improvement is desired. Diagram ",
+    "timestamp": 1772692284728
+  },
+  "references/eClassifiers/Publication/references/eStructuralFeatures/isbn/index.html": {
+    "path": "Publication/Attributes/isbn",
+    "link-uuid": "8449e48d-041e-45cf-8eea-104f93392a10",
+    "title": "isbn",
+    "content": "Type EString Multiplicity 0..1 ISBN for books.",
+    "timestamp": 1772692284893
+  },
+  "references/eClassifiers/TrainingCourse/references/eStructuralFeatures/provider/index.html": {
+    "path": "TrainingCourse/Attributes/provider",
+    "link-uuid": "3c94725a-b46c-436e-871c-a22045a56333",
+    "title": "provider",
+    "content": "Type EString Multiplicity 0..1 Name of the course provider or platform (e.g., Udemy, Coursera, Pluralsight).",
+    "timestamp": 1772692285032
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/contactMethods/index.html": {
+    "path": "Person/References/contactMethods",
+    "link-uuid": "b24bcec6-c1ba-4614-b847-8377bce0970e",
+    "title": "contactMethods",
+    "content": "Type ContactMethod Multiplicity 0..* Contact methods for this person (email, phone, web addresses, etc.).",
+    "timestamp": 1772692284681
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/efforts/index.html": {
+    "path": "Person/References/efforts",
+    "link-uuid": "1d8691c7-fd8a-4f5b-a2c2-fd4c0d183ae1",
+    "title": "efforts",
+    "content": "Type Effort Multiplicity 0..* Work and engagement history: positions held, projects, activities, and publications.",
+    "timestamp": 1772692284687
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/locations/index.html": {
+    "path": "KnowledgeGraph/References/locations",
+    "link-uuid": "41de9660-a086-48a0-ba97-93a7f02cdb54",
+    "title": "locations",
+    "content": "Type Location Multiplicity 0..* Locations referenced in this knowledge graph.",
+    "timestamp": 1772692284511
+  },
+  "references/eClassifiers/Phone/index.html": {
+    "link-uuid": "e896411e-8dc3-4558-861e-ad13184dbf82",
+    "title": "Phone",
+    "content": "A phone number contact method. Diagram ",
+    "timestamp": 1772692284766
+  },
+  "index.html": {
+    "link-uuid": "7ead7bb0-5145-47b6-9f34-17a28d63f8ad",
+    "title": "Professional Knowledge Graph Model",
+    "content": "A model/ontology of a professional knowledge graph that allows users to capture detailed information about their professional experience. It can be used to generate tailored resumes and power professional digital twins. The model captures: * People and their professional networks * Skills with mastery levels and hierarchy * Credentials (education, certifications, training, endorsements, awards, patents) * Work/engagement history (organizations, positions, activities/projects) * Locations ContactMethod Endorsement EffortStatus CredentialStatus PersonSkill Credential Organization Skill skills skill WebAddress KnowledgeGraph organizations skills SkillMastery Education Publication Position organization Award PlannedRole skills SkillResource resources Patent Location location location locations location Certification Phone Activity activities Email Effort skills plannedRoles TrainingCourse Person credentials efforts locations personSkills contactMethods collaborators inventors people endorsedBy Professional Knowledge Graph",
+    "timestamp": 1772692284029
+  },
+  "references/eClassifiers/Phone/references/eStructuralFeatures/extension/index.html": {
+    "path": "Phone/Attributes/extension",
+    "link-uuid": "fae65211-c928-471b-8664-2b19ee61356c",
+    "title": "extension",
+    "content": "Type EString Multiplicity 0..1 Phone extension.",
+    "timestamp": 1772692284779
+  },
+  "references/eClassifiers/WebAddress/inheritance.html": {
+    "path": "WebAddress/Inheritance",
+    "link-uuid": "683580e7-8750-4848-94ac-2e6021da94ff",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692285058
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/name/index.html": {
+    "path": "Credential/Attributes/name",
+    "link-uuid": "1694142c-bb5d-47ea-8920-b1ff0c58fa8e",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name of the credential.",
+    "timestamp": 1772692284249
+  },
+  "references/eClassifiers/Publication/inheritance.html": {
+    "path": "Publication/Inheritance",
+    "link-uuid": "aa01fe54-d12d-40b4-9da9-7df1347270c6",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284885
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/date/index.html": {
+    "path": "Credential/Attributes/date",
+    "link-uuid": "077fdcb8-e6fb-49c5-bc8b-c8b197d9e47e",
+    "title": "date",
+    "content": "Type EDate Multiplicity 0..1 Date the credential was obtained, completed, or awarded.",
+    "timestamp": 1772692284242
+  },
+  "references/eClassifiers/CredentialStatus/references/eLiterals/PLANNED/index.html": {
+    "path": "CredentialStatus/PLANNED",
+    "link-uuid": "77cd469d-2249-4474-8e2b-ec276ca2e431",
+    "title": "PLANNED",
+    "content": "The credential is desired/planned but not yet started.",
+    "timestamp": 1772692284285
+  },
+  "references/eClassifiers/Email/inheritance.html": {
+    "path": "Email/Inheritance",
+    "link-uuid": "8d58b83b-074d-4530-8ff9-e0c52ae054fb",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284431
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/startDate/index.html": {
+    "path": "Effort/Attributes/startDate",
+    "link-uuid": "ba7ce6e6-138c-4f2c-84fd-4a3e60761095",
+    "title": "startDate",
+    "content": "Type EDate Multiplicity 0..1 Start date of the effort.",
+    "timestamp": 1772692284383
+  },
+  "references/eClassifiers/Education/references/eStructuralFeatures/institution/index.html": {
+    "path": "Education/Attributes/institution",
+    "link-uuid": "87380122-5934-4ecc-b499-c556e0297f22",
+    "title": "institution",
+    "content": "Type EString Multiplicity 0..1 Name of the educational institution.",
+    "timestamp": 1772692284323
+  },
+  "references/eClassifiers/Position/index.html": {
+    "link-uuid": "c6ed040a-c69d-46bb-a9c5-5c53265f64ad",
+    "title": "Position",
+    "content": "A professional position or role held at an organization. Contains the activities and projects carried out in that role. Diagram ",
+    "timestamp": 1772692284843
+  },
+  "references/eClassifiers/KnowledgeGraph/index.html": {
+    "link-uuid": "9154fedf-8632-4f65-8e62-dfb74b214a6c",
+    "title": "KnowledgeGraph",
+    "content": "Root container for a professional knowledge graph. Holds the catalogue of people, skills, organizations and locations. Diagram ",
+    "timestamp": 1772692284501
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/collaborators/index.html": {
+    "path": "Effort/References/collaborators",
+    "link-uuid": "4b620744-c94a-43b1-a22d-5ecb9ed3ca83",
+    "title": "collaborators",
+    "content": "Type Person Multiplicity 0..* People the person collaborated with on this effort.",
+    "timestamp": 1772692284363
+  },
+  "references/eClassifiers/Publication/index.html": {
+    "link-uuid": "907bb10f-608a-49c1-b2fa-a470398971e3",
+    "title": "Publication",
+    "content": "A publication such as an article, blog post, book, research paper, or other published work. Diagram ",
+    "timestamp": 1772692284882
+  },
+  "references/eClassifiers/Location/references/eStructuralFeatures/country/index.html": {
+    "path": "Location/Attributes/country",
+    "link-uuid": "291c02e2-3b08-464e-8f3a-0121c96f965b",
+    "title": "country",
+    "content": "Type EString Multiplicity 0..1 Country name.",
+    "timestamp": 1772692284562
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/skills/index.html": {
+    "path": "KnowledgeGraph/References/skills",
+    "link-uuid": "7cd4b862-8e84-494d-b9de-fe4c207cf18e",
+    "title": "skills",
+    "content": "Type Skill Multiplicity 0..* Top-level skills in the knowledge graph skill catalogue. Skills form a hierarchy - sub-skills are contained within their parent skill.",
+    "timestamp": 1772692284523
+  },
+  "references/eClassifiers/PlannedRole/references/eStructuralFeatures/count/index.html": {
+    "path": "PlannedRole/Attributes/count",
+    "link-uuid": "db6985e5-dd34-4c94-9a84-17723194448c",
+    "title": "count",
+    "content": "Type EInt Multiplicity 0..1 Number of people needed for this role.",
+    "timestamp": 1772692284810
+  },
+  "references/eClassifiers/Skill/references/eStructuralFeatures/resources/index.html": {
+    "path": "Skill/References/resources",
+    "link-uuid": "107ee8b2-221c-43d3-b698-a3945ff8401e",
+    "title": "resources",
+    "content": "Type SkillResource Multiplicity 0..* Tools and other resources required or commonly used when applying this skill.",
+    "timestamp": 1772692284942
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/people/index.html": {
+    "path": "KnowledgeGraph/References/people",
+    "link-uuid": "71f95c2e-0a76-434d-a677-c0f80036bf7c",
+    "title": "people",
+    "content": "Type Person Multiplicity 0..* People contained in this knowledge graph.",
+    "timestamp": 1772692284520
+  },
+  "references/eClassifiers/Education/references/eStructuralFeatures/degree/index.html": {
+    "path": "Education/Attributes/degree",
+    "link-uuid": "bb6322c2-8492-4ce4-a39c-5ad46db799d1",
+    "title": "degree",
+    "content": "Type EString Multiplicity 0..1 Degree awarded (e.g., Bachelor of Science, Master of Arts, Ph.D.).",
+    "timestamp": 1772692284317
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/description/index.html": {
+    "path": "Effort/Attributes/description",
+    "link-uuid": "bd2dd8f4-b158-479d-aa12-fd321ea754ea",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of the effort.",
+    "timestamp": 1772692284366
+  },
+  "references/eClassifiers/Education/references/eStructuralFeatures/location/index.html": {
+    "path": "Education/References/location",
+    "link-uuid": "b32398db-bea1-48e2-a91c-a4cd4c833c49",
+    "title": "location",
+    "content": "Type Location Multiplicity 0..1 Location of the educational institution.",
+    "timestamp": 1772692284326
+  },
+  "references/eClassifiers/PersonSkill/references/eStructuralFeatures/skill/index.html": {
+    "path": "PersonSkill/References/skill",
+    "link-uuid": "c1690da7-55f2-440a-a85d-6e750facdf77",
+    "title": "skill",
+    "content": "Type Skill Multiplicity 1 The skill this entry refers to.",
+    "timestamp": 1772692284745
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/locations/index.html": {
+    "path": "Person/References/locations",
+    "link-uuid": "3c684a9b-a79d-412c-87db-873cddd6b5df",
+    "title": "locations",
+    "content": "Type Location Multiplicity 0..* Locations where this person has lived or worked.",
+    "timestamp": 1772692284691
+  },
+  "references/eClassifiers/TrainingCourse/inheritance.html": {
+    "path": "TrainingCourse/Inheritance",
+    "link-uuid": "fae425e0-38ec-4b4c-9557-4d3ebdf25387",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692285021
+  },
+  "references/eClassifiers/Activity/inheritance.html": {
+    "path": "Activity/Inheritance",
+    "link-uuid": "cb0f609f-1f3d-4a0d-bf2f-274616646f0f",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284062
+  },
+  "references/eClassifiers/Certification/references/eStructuralFeatures/expires/index.html": {
+    "path": "Certification/Attributes/expires",
+    "link-uuid": "ea2c3cf3-3893-41b5-9152-22ffe887e12b",
+    "title": "expires",
+    "content": "Type EDate Multiplicity 0..1 Expiry date of the certification, if applicable.",
+    "timestamp": 1772692284153
+  },
+  "references/eClassifiers/EffortStatus/references/eLiterals/COMPLETED/index.html": {
+    "path": "EffortStatus/COMPLETED",
+    "link-uuid": "bb9a695a-e439-4583-9f57-6f011a3e30ee",
+    "title": "COMPLETED",
+    "content": "The effort has been completed.",
+    "timestamp": 1772692284399
+  },
+  "references/eClassifiers/Education/index.html": {
+    "link-uuid": "e8681883-a089-4314-868f-3affccebfbd8",
+    "title": "Education",
+    "content": "An educational credential such as a degree, diploma, or certificate from an educational institution. Diagram ",
+    "timestamp": 1772692284307
+  },
+  "references/eClassifiers/PlannedRole/references/eStructuralFeatures/description/index.html": {
+    "path": "PlannedRole/Attributes/description",
+    "link-uuid": "ecc33cca-41f5-40aa-896a-aeced12d87a4",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Detailed description of responsibilities for this role.",
+    "timestamp": 1772692284813
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/skills/index.html": {
+    "path": "Credential/References/skills",
+    "link-uuid": "92d502fb-3d19-483e-a274-860d730f4916",
+    "title": "skills",
+    "content": "Type Skill Multiplicity 0..* Skills validated or certified by this credential.",
+    "timestamp": 1772692284253
+  },
+  "references/eClassifiers/Phone/references/eStructuralFeatures/number/index.html": {
+    "path": "Phone/Attributes/number",
+    "link-uuid": "3e270fd4-0322-4614-9921-4b40eb898aaf",
+    "title": "number",
+    "content": "Type EString Multiplicity 0..1 Phone number.",
+    "timestamp": 1772692284782
+  },
+  "references/eClassifiers/Effort/index.html": {
+    "link-uuid": "3010f7bc-902b-43f7-a9ba-6f128292439d",
+    "title": "Effort",
+    "content": "Abstract base for something that a person did, is doing, or is planning to do. An effort may use skills and involve collaboration with others. An effort can be planned (an idea) listing required skills and roles for others. Diagram ",
+    "timestamp": 1772692284357
+  },
+  "references/eClassifiers/Effort/references/eStructuralFeatures/name/index.html": {
+    "path": "Effort/Attributes/name",
+    "link-uuid": "770a1ef1-cbe9-48e3-9535-f86289a58811",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name or title of the effort.",
+    "timestamp": 1772692284372
+  },
+  "references/eClassifiers/Email/references/eStructuralFeatures/address/index.html": {
+    "path": "Email/Attributes/address",
+    "link-uuid": "b3c9505f-95a4-4bbf-a474-34dee797422e",
+    "title": "address",
+    "content": "Type EString Multiplicity 0..1 Email address.",
+    "timestamp": 1772692284438
+  },
+  "references/eClassifiers/Activity/index.html": {
+    "link-uuid": "7c042be1-9d69-410a-981a-4689a0d80118",
+    "title": "Activity",
+    "content": "A specific project, assignment, or activity carried out as part of a position or independently. Activities are concrete deliverable-focused units of work within an engagement. Diagram ",
+    "timestamp": 1772692284057
+  },
+  "references/eClassifiers/Patent/references/eStructuralFeatures/patentNumber/index.html": {
+    "path": "Patent/Attributes/patentNumber",
+    "link-uuid": "94074ce6-ae70-4d0b-9c5b-95941a7e69e8",
+    "title": "patentNumber",
+    "content": "Type EString Multiplicity 0..1 Official patent number.",
+    "timestamp": 1772692284642
+  },
+  "references/eClassifiers/SkillResource/references/eStructuralFeatures/name/index.html": {
+    "path": "SkillResource/Attributes/name",
+    "link-uuid": "f0f6e09a-9fd0-4ebf-9de5-09c7e3217f5a",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Name of the resource or tool.",
+    "timestamp": 1772692284998
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/name/index.html": {
+    "path": "Person/Attributes/name",
+    "link-uuid": "827f1671-5679-4e49-ac9f-d79dbf00755d",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Full name of the person.",
+    "timestamp": 1772692284694
+  },
+  "references/eClassifiers/PlannedRole/references/eStructuralFeatures/title/index.html": {
+    "path": "PlannedRole/Attributes/title",
+    "link-uuid": "30af6533-f8de-44a0-89b9-b6ba27011fa3",
+    "title": "title",
+    "content": "Type EString Multiplicity 0..1 Title or description of the needed role.",
+    "timestamp": 1772692284819
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/summary/index.html": {
+    "path": "Person/Attributes/summary",
+    "link-uuid": "6b6c0c00-5059-47ec-95ef-3eb8d8cd3c45",
+    "title": "summary",
+    "content": "Type EString Multiplicity 0..1 Professional summary or bio of the person.",
+    "timestamp": 1772692284703
+  },
+  "references/eClassifiers/WebAddress/references/eStructuralFeatures/platform/index.html": {
+    "path": "WebAddress/Attributes/platform",
+    "link-uuid": "56deabd5-9b66-4a75-8cf8-a679cea8e897",
+    "title": "platform",
+    "content": "Type EString Multiplicity 0..1 Platform or service name (e.g., LinkedIn, GitHub, Twitter, personal website).",
+    "timestamp": 1772692285063
+  },
+  "references/eClassifiers/Certification/references/eStructuralFeatures/issuer/index.html": {
+    "path": "Certification/Attributes/issuer",
+    "link-uuid": "93c19aa9-114c-402c-a66a-55e3ca5b7246",
+    "title": "issuer",
+    "content": "Type EString Multiplicity 0..1 Name of the organization or authority that issued this certification.",
+    "timestamp": 1772692284157
+  },
+  "references/eClassifiers/Education/inheritance.html": {
+    "path": "Education/Inheritance",
+    "link-uuid": "fcc2d054-b5af-4956-8490-89e1f59d1c9f",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284310
+  },
+  "references/eClassifiers/Location/index.html": {
+    "link-uuid": "3ffac58a-1b87-4663-8c0b-22a2fd5a0cf4",
+    "title": "Location",
+    "content": "A geographic location defined by country, state/province and city. Referenced by positions, organizations, and the person&rsquo;s residence history. Diagram ",
+    "timestamp": 1772692284551
+  },
+  "references/eClassifiers/Phone/references/eStructuralFeatures/countryCode/index.html": {
+    "path": "Phone/Attributes/countryCode",
+    "link-uuid": "87ef1d60-1e5e-4cc7-985c-7f53d30705ba",
+    "title": "countryCode",
+    "content": "Type EString Multiplicity 0..1 Country dialing code (e.g., +1 for USA, +44 for UK).",
+    "timestamp": 1772692284776
+  },
+  "references/eClassifiers/ContactMethod/inheritance.html": {
+    "path": "ContactMethod/Inheritance",
+    "link-uuid": "7bbd3b35-6531-40ec-9b95-51f8cc87d181",
+    "title": "Inheritance",
+    "content": "Subtypes ",
+    "timestamp": 1772692284189
+  },
+  "references/eClassifiers/Person/references/eStructuralFeatures/network/index.html": {
+    "path": "Person/References/network",
+    "link-uuid": "7fc61749-fd19-46fd-9039-be4acd4c1ecf",
+    "title": "network",
+    "content": "Type Person Multiplicity 0..* Professional network - people this person has interacted with in some way.",
+    "timestamp": 1772692284697
+  },
+  "references/eClassifiers/ContactMethod/references/eStructuralFeatures/name/index.html": {
+    "path": "ContactMethod/Attributes/name",
+    "link-uuid": "e0a518bd-4e82-46e6-9a40-c6175ade68f5",
+    "title": "name",
+    "content": "Type EString Multiplicity 0..1 Label for this contact method (e.g., &lsquo;Work Email&rsquo;, &lsquo;Personal Phone&rsquo;).",
+    "timestamp": 1772692284200
+  },
+  "references/eClassifiers/Award/inheritance.html": {
+    "path": "Award/Inheritance",
+    "link-uuid": "d817d82d-f5a4-4d40-9757-ce402ca8cf6b",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1772692284101
+  },
+  "references/eClassifiers/Position/references/eStructuralFeatures/title/index.html": {
+    "path": "Position/Attributes/title",
+    "link-uuid": "b472728d-1b38-4683-9f1f-c22a9667a8aa",
+    "title": "title",
+    "content": "Type EString Multiplicity 0..1 Job title or role title (e.g., Senior Software Engineer, Principal Architect).",
+    "timestamp": 1772692284860
+  },
+  "references/eClassifiers/PersonSkill/references/eStructuralFeatures/notes/index.html": {
+    "path": "PersonSkill/Attributes/notes",
+    "link-uuid": "ab616db6-e810-4268-b414-23509ae54c37",
+    "title": "notes",
+    "content": "Type EString Multiplicity 0..1 Additional notes about the person&rsquo;s experience or plans with this skill.",
+    "timestamp": 1772692284742
+  },
+  "references/eClassifiers/Award/references/eStructuralFeatures/issuer/index.html": {
+    "path": "Award/Attributes/issuer",
+    "link-uuid": "50f02a89-5f89-4fbe-8479-75ae8ac4b57f",
+    "title": "issuer",
+    "content": "Type EString Multiplicity 0..1 Organization or authority that issued the award.",
+    "timestamp": 1772692284109
+  },
+  "references/eClassifiers/SkillResource/references/eStructuralFeatures/url/index.html": {
+    "path": "SkillResource/Attributes/url",
+    "link-uuid": "e3a864cd-2acd-44fa-a0d1-402ce0915f98",
+    "title": "url",
+    "content": "Type EString Multiplicity 0..1 URL for the resource.",
+    "timestamp": 1772692285001
+  },
+  "references/eClassifiers/KnowledgeGraph/references/eStructuralFeatures/description/index.html": {
+    "path": "KnowledgeGraph/Attributes/description",
+    "link-uuid": "db9f7680-9067-4e41-94f7-d5f2cf5ab68a",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of this knowledge graph.",
+    "timestamp": 1772692284508
+  },
+  "references/eClassifiers/TrainingCourse/index.html": {
+    "link-uuid": "3031cb2c-c586-4752-9c59-17424bcfc725",
+    "title": "TrainingCourse",
+    "content": "A training course completed by the person, such as an online course on Udemy, Coursera, or an in-person training. Diagram ",
+    "timestamp": 1772692285019
+  },
+  "references/eClassifiers/Organization/references/eStructuralFeatures/industry/index.html": {
+    "path": "Organization/Attributes/industry",
+    "link-uuid": "0f7be145-e2f2-471e-95c3-562e79514b5b",
+    "title": "industry",
+    "content": "Type EString Multiplicity 0..1 Industry or sector the organization operates in.",
+    "timestamp": 1772692284596
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/status/index.html": {
+    "path": "Credential/Attributes/status",
+    "link-uuid": "6a905a8e-5203-4fd2-866a-da67912e456a",
+    "title": "status",
+    "content": "Type CredentialStatus Multiplicity 0..1 Current status of this credential.",
+    "timestamp": 1772692284256
+  },
+  "references/eClassifiers/Endorsement/index.html": {
+    "link-uuid": "06d7afdc-f292-4c59-a902-bf9a24953e40",
+    "title": "Endorsement",
+    "content": "An endorsement of a skill by another person, such as a LinkedIn skill endorsement or a letter of recommendation. Diagram ",
+    "timestamp": 1772692284461
+  },
+  "references/eClassifiers/Organization/references/eStructuralFeatures/description/index.html": {
+    "path": "Organization/Attributes/description",
+    "link-uuid": "ab80d7f0-1c67-4c33-9513-379b82d2fc18",
+    "title": "description",
+    "content": "Type EString Multiplicity 0..1 Description of the organization.",
+    "timestamp": 1772692284593
+  },
+  "references/eClassifiers/Credential/references/eStructuralFeatures/url/index.html": {
+    "path": "Credential/Attributes/url",
+    "link-uuid": "b59d7b22-3bcb-4d4c-b8c4-758962c9a744",
+    "title": "url",
+    "content": "Type EString Multiplicity 0..1 URL for verification or more information about this credential.",
+    "timestamp": 1772692284260
+  },
+  "references/eClassifiers/TrainingCourse/references/eStructuralFeatures/courseUrl/index.html": {
+    "path": "TrainingCourse/Attributes/courseUrl",
+    "link-uuid": "7b5d512f-f9ae-4db3-9b31-9393a3d9bc2f",
+    "title": "courseUrl",
+    "content": "Type EString Multiplicity 0..1 URL of the course.",
+    "timestamp": 1772692285029
+  }
+}
